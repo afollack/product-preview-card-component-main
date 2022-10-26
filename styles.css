@@ -1,0 +1,236 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-size: 14px;
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-card {
+  width: 90%;
+  background-color: hsl(0, 0%, 100%);
+  margin: 0 auto;
+  border-radius: 1em;
+}
+
+.item-img {
+  max-width: 100%;
+  border-radius: 1em 1em 0 0;
+}
+
+.desktop-img {
+  display: none;
+}
+
+.item-details {
+  margin: 0.75em;
+  padding: 1em;
+}
+
+.item-type {
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 0.2em;
+}
+
+.item-name {
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+  margin: 0.5em 0;
+}
+
+.item-description {
+  color: hsl(228, 12%, 48%);
+  line-height: 1.5em;
+}
+
+.item-price {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 2rem;
+  padding: 1em 0;
+  line-height: 1em;
+}
+
+.MSRP {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  color: hsl(228, 12%, 48%);
+  vertical-align: top;
+  text-decoration: line-through;
+  padding: 1em;
+}
+
+.cart-button {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  border: none;
+  padding: 1em;
+  width: 100%;
+  border-radius: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cart-button:hover {
+  background-color: hsl(156, 86%, 15%);
+}
+
+.cart-button img {
+  padding-right: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .item-card {
+    display: flex;
+    width: 575px;
+  }
+  .item-img {
+    border-radius: 1em 0 0 1em;
+  }
+  .desktop-img {
+    display: block;
+    max-width: 50%;
+    height: auto;
+  }
+  .mobile-img {
+    display: none;
+  }
+}
